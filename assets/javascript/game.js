@@ -44,10 +44,11 @@ document.onkeyup = function(event) {
 
   // Display userinput in Your Guesses So Far.
 
-  if(lowerCase === computerChoice) {
+  if (lowerCase === computerChoice) {
     winCounter++;
     // Reset computerChoice
     // Reset guessCounter
+    resetGame();
   } else {
     guessCounter--;
   }
@@ -56,6 +57,7 @@ document.onkeyup = function(event) {
     lossCounter++;
     // Reset computerChoice
     // Reset guessCounter
+    resetGame();
   }
 
 
@@ -65,5 +67,12 @@ document.onkeyup = function(event) {
   
 }
 
-  
+
+function resetGame() {
+  guessCounter = 9;
+
+  computerChoice = letters[Math.floor(Math.random() * letters.length)];
+  console.log(computerChoice);
+}
+
 
