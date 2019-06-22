@@ -20,7 +20,8 @@
   * The app picks a new random letter from A - Z.
   * Guesses Left counter is reset to have 9 guesses.
 * The player countinue to guess the random letter.
-
+* The lists of user guesses are shown in **Your Guesses So Far** paragraph. 
+* The lists of user guesses resets when the player wins or loses and have new random letter to guess.
 
 
 

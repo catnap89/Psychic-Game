@@ -14,6 +14,7 @@ PSUEDOCODING
 6. if user input === computer guess, win increase by one --> reset computer choice (done)
 7. else, guesses left decreases by 1 until it reaches -1. (done)
 8. When guesses left reaches -1, it resets to 9 and Loses increase by 1. --> reset computer choice (done)
+9. when the the win counter goes up or lose counter goes up, reset userinput paragraph (done)
 
 
 */
@@ -46,7 +47,7 @@ console.log(computerChoice);
     if (lowerCase === computerChoice) {
 
       winCounter++;
-      resetGame();  // Resets computerChoice and guessCounter
+      resetGame();  // Resets computerChoice, guessCounter, and your guesses so far
 
     } else {
 
@@ -72,6 +73,7 @@ console.log(computerChoice);
 
   function resetGame() {
     guessCounter = 9;
+    guessArr = [];
 
     computerChoice = letters[Math.floor(Math.random() * letters.length)];
     console.log(computerChoice);
