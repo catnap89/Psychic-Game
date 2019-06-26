@@ -32,7 +32,7 @@ var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
 var guessArr = [];  // this array will be used to store the user inputs in userInput paragraph.
 
 // Randomly chooses from letters variable
-// Not sure why this variable alone is generating random letters without a function to run it?
+
 var computerChoice = letters[Math.floor(Math.random() * letters.length)];
 console.log(computerChoice);
 
