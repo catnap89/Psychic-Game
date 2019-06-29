@@ -34,7 +34,7 @@ var guessArr = [];  // this array will be used to store the user inputs in userI
 // Randomly chooses from letters variable
 
 var computerChoice = letters[Math.floor(Math.random() * letters.length)];
-console.log(computerChoice);
+
 
 // Functions
 // =======================================================================
@@ -76,6 +76,6 @@ console.log(computerChoice);
     guessArr = [];
 
     computerChoice = letters[Math.floor(Math.random() * letters.length)];
-    console.log(computerChoice);
+    
   };
 
